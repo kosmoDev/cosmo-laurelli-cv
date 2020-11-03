@@ -129,5 +129,3 @@ window.addEventListener('scroll', () => {
 
 // ACTIVE PAGE ON START
 activePage(sideAnchors[0], activeIcons[0], hoverIcons[0])
-
-console.log(emIconsSs)
