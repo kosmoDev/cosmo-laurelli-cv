@@ -1,4 +1,4 @@
-/* GET ELEMENTS */
+//----------------------------- GET ELEMENTS----------------------------------------------
 const sideBar = document.getElementById('sidebar')
 const sideAnchors = document.getElementsByClassName('nav-link')[0].getElementsByTagName('a');
 const navbar = document.getElementsByClassName('navbar')[0];
@@ -21,8 +21,7 @@ const closeSidebar = document.getElementsByClassName('fa-times')[0];
 const emIconsSs = document.getElementsByClassName('em-social-icons-ss')[0]
 const inIconsSs = document.getElementsByClassName('in-social-icons-ss')[0]
 
-
-// FUNCTION CONSTRUCTION
+//------------------------------SUPPORT FUNCTION------------------------------------------
 function nonActivePage(navLink, activeIcons, index) {
   for (let i = 0; i < navLink.length; i++) {
     if (i != index) {
@@ -63,7 +62,7 @@ function navOut(navLink, hoverIcons) {
 }
 
 function actualScrollY(index) {
-  return (headers[index].getBoundingClientRect().y + window.scrollY) - headers[index].getBoundingClientRect().height;
+  return ((headers[index].getBoundingClientRect().y + window.scrollY) - (headers[index].getBoundingClientRect().height)) - 100;
 }
 
 
@@ -84,7 +83,7 @@ for (let i = 0; i < sideAnchors.length; i++) {
   });
 }
 
-// EVENTS LISTENER
+// --------------------------------EVENTS LISTENER----------------------------------------
 // ACTIVE PAGE ANIMATION
 window.addEventListener('scroll', () => {
   let index = 0;
@@ -132,6 +131,7 @@ window.addEventListener('scroll', () => {
 
 });
 
+// HUMBURGER ANIMATION
 humburger.addEventListener('click', () => {
   sideBar.style.display = 'block'
   sideBar.style.opacity = 0.9
@@ -142,6 +142,7 @@ humburger.addEventListener('click', () => {
   inIconsSs.style.display = 'none'
 })
 
+//CLOSE SIDEBAR ANIMATION
 closeSidebar.addEventListener('click', () => {
   sideBar.style.display = 'none'
   humburger.style.display = 'block'
