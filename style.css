@@ -75,7 +75,7 @@ a img {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-left: 60%;
+  margin-left: 45%;
   margin-bottom: 5rem;
 }
 
@@ -84,7 +84,7 @@ a img {
   height: 7rem;
   padding: 0.75rem;
   border-radius: 2rem;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 
@@ -93,52 +93,6 @@ a img {
   background-image: url(img/bg_main.png);
   background-size: contain;
   float: right;
-}
-
-.in-social-icons-ss img {
-  position: fixed;
-  display: block;
-  padding-left: 1rem;
-  margin-left: 0.75rem;
-  top: 20rem;
-  width: 7rem;
-  height: 7rem;
-  padding: 0.75rem;
-  border-radius: 2rem;
-  display: none;
-}
-
-.em-social-icons-ss img {
-  position: fixed;
-  display: block;
-  padding-left: 1rem;
-  margin-left: 0.75rem;
-  top: 30rem;
-  width: 7rem;
-  height: 7rem;
-  padding: 0.75rem;
-  border-radius: 2rem;
-  display: none;
-}
-
-i.fa-bars {
-  position: fixed;
-  padding-left: 1rem;
-  margin-left: 1rem;
-  top: 2rem;
-  color: #1e1e1e;
-  display: none;
-  cursor: pointer;
-}
-
-i.fa-times {
-  position: fixed;
-  padding-left: 1rem;
-  margin-left: 1rem;
-  top: 2rem;
-  color: #1e1e1e;
-  display: none;
-  cursor: pointer;
 }
 
 .section-header {
@@ -772,9 +726,9 @@ i.fa-times {
 
 .hobbies-container {
   width: 78%;
-  margin-top: 1rem;
+  margin-top: 20rem;
   margin-left: 14rem;
-  margin-bottom: 1rem;
+  margin-bottom: 20rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -867,8 +821,8 @@ textarea {
 }
 
 #form-container {
-  margin-top: 30rem;
-  margin-bottom: 30rem;
+  margin-top: 50rem;
+  margin-bottom: 50rem;
 }
 
 #contact-form {
@@ -940,7 +894,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin-top: 70rem;
-  margin-bottom: 60em;
+  margin-bottom: 70rem;
 }
 
 #download-container button {
@@ -1012,8 +966,8 @@ textarea {
   }
 
   #form-container {
-    margin-top: 40rem;
-    margin-bottom: 40rem;
+    margin-top: 50rem;
+    margin-bottom: 50rem;
   }
 
 }

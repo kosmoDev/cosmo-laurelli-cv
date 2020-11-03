@@ -16,10 +16,6 @@ const trainingSubPageActive2 = document.getElementById('training-subPage-activeP
 const opsExpSubPageDec = document.getElementById('opsExp-subPage-dec');
 const opsExpSubPageActive1 = document.getElementById('opsExp-subPage-activePage1');
 const opsExpSubPageActive2 = document.getElementById('opsExp-subPage-activePage2');
-const humburger = document.getElementsByClassName('fa-bars')[0];
-const closeSidebar = document.getElementsByClassName('fa-times')[0];
-const emIconsSs = document.getElementsByClassName('em-social-icons-ss')[0]
-const inIconsSs = document.getElementsByClassName('in-social-icons-ss')[0]
 
 //------------------------------SUPPORT FUNCTION------------------------------------------
 function nonActivePage(navLink, activeIcons, index) {
@@ -130,26 +126,6 @@ window.addEventListener('scroll', () => {
 
 
 });
-
-// HUMBURGER ANIMATION
-humburger.addEventListener('click', () => {
-  sideBar.style.display = 'block'
-  sideBar.style.opacity = 0.9
-  humburger.style.display = 'none'
-  closeSidebar.style.display = 'block'
-  closeSidebar.style.marginLeft = `${sideBar.getBoundingClientRect().width}px`
-  emIconsSs.style.display = 'none'
-  inIconsSs.style.display = 'none'
-})
-
-//CLOSE SIDEBAR ANIMATION
-closeSidebar.addEventListener('click', () => {
-  sideBar.style.display = 'none'
-  humburger.style.display = 'block'
-  closeSidebar.style.display = 'none'
-  emIconsSs.style.display = 'block'
-  inIconsSs.style.display = 'block'
-})
 
 // ACTIVE PAGE ON START
 activePage(sideAnchors[0], activeIcons[0], hoverIcons[0])
