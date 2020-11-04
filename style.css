@@ -948,22 +948,9 @@ textarea {
   }
 }
 
-@media only screen and (max-width:1080px) {
-  body {
-    zoom: 0.38;
-  }
-}
-
-@media only screen and (max-width:760px) {
-  body {
-    zoom: 0.2;
-  }
-}
-
-
 @media only screen and (max-height:600px) {
   body {
-    zoom: 0.5;
+    zoom: 0.4;
   }
 
   #download-container {
