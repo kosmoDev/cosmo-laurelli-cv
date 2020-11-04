@@ -944,7 +944,13 @@ textarea {
 
 @media only screen and (max-width:1366px) {
   body {
-    zoom: 0.5;
+    zoom: 0.4;
+  }
+}
+
+@media only screen and (max-width:1080px) {
+  body {
+    zoom: 0.38;
   }
 }
 
