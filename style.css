@@ -948,9 +948,15 @@ textarea {
   }
 }
 
+@media only screen and (max-width:1024px) {
+  body {
+    zoom: 0.3;
+  }
+}
+
 @media only screen and (max-height:600px) {
   body {
-    zoom: 0.4;
+    zoom: 0.3;
   }
 
   #download-container {
