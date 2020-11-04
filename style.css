@@ -960,6 +960,12 @@ textarea {
   }
 }
 
+@media only screen and (max-width:720px) {
+  body {
+    zoom: 0.2;
+  }
+}
+
 @media only screen and (max-height:600px) {
   body {
     zoom: 0.3;
