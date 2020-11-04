@@ -1,4 +1,4 @@
-//----------------------------- GET ELEMENTS----------------------------------------------
+//----------------------------- GET ELEMENTS-------------------------------
 const sideBar = document.getElementById('sidebar')
 const sideAnchors = document.getElementsByClassName('nav-link')[0].getElementsByTagName('a');
 const navbar = document.getElementsByClassName('navbar')[0];

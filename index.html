@@ -8,7 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Cosmo Laurelli CV</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init('user_MJKUHoez3doQGyw82afDu');
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          emailjs.sendForm('service_5y8y93y', 'template_y8a0d3f', '#contact-form');
+          alert('Your message has been sent. Thanks');
+          location.reload()
+
+
+        });
+      }
+    </script>
   </head>
+
 
   <body>
     <div class="container">
@@ -672,12 +693,12 @@
           <div id="form-container">
             <h3>- LET'S TALK -</h3>
             <form id="contact-form">
-              <input id="name" name="name" type="text" placeholder="Your Name:">
+              <input id="name" name="name" type="text" placeholder="Your Name:" required>
               <br>
-              <input id="email" name="email" type="email" placeholder="Your e-mail:">
+              <input id="email" name="email" type="email" placeholder="Your e-mail:" required>
               <br>
-              <textarea name="message" id="message" cols="30" rows="10"
-                placeholder="Leave your message here..."></textarea>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave your message here..."
+                required></textarea>
               <br>
               <input type="submit" value="SEND" id="send-email">
             </form>
