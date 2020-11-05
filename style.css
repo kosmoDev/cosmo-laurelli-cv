@@ -936,37 +936,37 @@ textarea {
 
 }
 
-@media only screen and (min-width:1600px) {
+@media (min-width:1600px) {
   body {
     zoom: 0.95;
   }
 }
 
-@media only screen and (max-width:1366px) {
+@media (max-width:1366px) {
   body {
     zoom: 0.4;
   }
 }
 
-@media only screen and (max-width:1080px) {
+@media (max-width:1080px) {
   body {
     zoom: 0.3;
   }
 }
 
-@media only screen and (max-width:1024px) {
+@media (max-width:1024px) {
   body {
     zoom: 0.25;
   }
 }
 
-@media only screen and (max-width:720px) {
+@media (max-width:720px) {
   body {
     zoom: 0.2;
   }
 }
 
-@media only screen and (max-height:600px) {
+@media (max-height:600px) {
   body {
     zoom: 0.3;
   }
